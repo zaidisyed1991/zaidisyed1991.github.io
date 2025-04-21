@@ -47,7 +47,7 @@ custom_class: white-page
 
 **WiseCities, Washington, DC** – Software Engineer  
 *March 2022 – September 2023*  
-- Developed core features for a social media platform for senior citizens, enhancing user engagement.  
+- Developed core features for a social media platform for senior citizens, enhancing user engagement, one of the first engineers hired.  
 - Engineered real-time notifications and interactive user interfaces using AWS, Azure, Java, and JavaScript.  
 - Architected secure RESTful APIs and microservices, optimized CI/CD pipelines with Jenkins, Docker, and Kubernetes.  
 - Mentored five junior developers.
