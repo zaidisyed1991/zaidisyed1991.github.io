@@ -1,66 +1,61 @@
-# -----------------------------------------------------------------------------
 # Site settings
-# -----------------------------------------------------------------------------
-title: "Syed Zaidi – Curriculum Vitae"
+title: "Syed Zaidi – Academic Portfolio"
 first_name: "Syed"
 middle_name: ""
 last_name: "Zaidi"
 contact_note: >
-  The best way to reach me is via email.
+  The best way to reach me is via email at szaidi@terpmail.umd.edu.
 description: >
-  An academic website showcasing my CV, research, teaching, and industry experience.
+  An academic portfolio showcasing my research in AI, teaching experience, and industry projects.
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with the <a href="https://github.com/alshedivat/al-folio" target="_blank">al‑folio</a> theme.
+  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with the <a href="https://github.com/alshedivat/al-folio" target="_blank">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com/" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, CV, portfolio
+keywords: AI, machine learning, reinforcement learning, software engineering, academic CV
 lang: en
 icon: ⚛️
 
-# Use your own domain or GitHub Pages URL – for a personal site hosted at
-# https://zaidisyed1991.github.io, set baseurl to empty.
-url: "https://zaidisyed1991.github.io"  
-baseurl: ""  
+# URL configuration
+url: "https://zaidisyed1991.github.io"
+baseurl: ""
 last_updated: true
-impressum_path:
 back_to_top: true
 
-# -----------------------------------------------------------------------------
-# Theme
-# -----------------------------------------------------------------------------
-repo_theme_light: default
+# Theme customization
+theme: al-folio
+repo_theme_light: light
 repo_theme_dark: dark
 repo_trophies:
   enabled: true
   theme_light: flat
   theme_dark: gitdimmed
 
-# -----------------------------------------------------------------------------
 # RSS Feed
-# -----------------------------------------------------------------------------
 rss_icon: true
 
-# -----------------------------------------------------------------------------
-# Layout
-# -----------------------------------------------------------------------------
+# Layout settings
 navbar_fixed: true
 footer_fixed: true
 search_enabled: true
 socials_in_search: true
 posts_in_search: true
 bib_search: true
-max_width: 930px
+max_width: 1000px
 
-# -----------------------------------------------------------------------------
+# Navigation menu
+nav:
+  - name: Home
+    link: /
+  - name: CV
+    link: /cv/
+  - name: Blog
+    link: /blog/
+
 # Open Graph & Schema.org
-# -----------------------------------------------------------------------------
 serve_og_meta: true
 serve_schema_org: false
 og_image: "/assets/img/og-image.jpg"
 
-# -----------------------------------------------------------------------------
-# Analytics and verification (update if needed)
-# -----------------------------------------------------------------------------
+# Analytics (disabled for simplicity)
 google_analytics:
 cronitor_analytics:
 pirsch_analytics:
@@ -68,11 +63,9 @@ openpanel_analytics:
 google_site_verification:
 bing_site_verification:
 
-# -----------------------------------------------------------------------------
-# Blog
-# -----------------------------------------------------------------------------
+# Blog settings
 blog_name: "My Academic Blog"
-blog_description: "A simple academic portfolio and blog"
+blog_description: "Insights on AI, machine learning, and software engineering"
 permalink: /blog/:year/:title/
 lsi: false
 
@@ -83,9 +76,7 @@ related_blog_posts:
   enabled: true
   max_related: 5
 
-# -----------------------------------------------------------------------------
-# Comments (Giscus recommended)
-# -----------------------------------------------------------------------------
+# Comments (Giscus configuration retained)
 giscus:
   repo: "zaidisyed1991/zaidisyed1991.github.io"
   repo_id: ""
@@ -105,16 +96,12 @@ external_sources:
   - name: medium.com
     rss_url: "https://medium.com/@zaidisyed1991/feed"
 
-# -----------------------------------------------------------------------------
-# Newsletter
-# -----------------------------------------------------------------------------
+# Newsletter (disabled)
 newsletter:
   enabled: false
   endpoint:
 
-# -----------------------------------------------------------------------------
 # Collections
-# -----------------------------------------------------------------------------
 collections:
   books:
     output: true
@@ -125,9 +112,7 @@ collections:
   projects:
     output: true
 
-# -----------------------------------------------------------------------------
 # Jekyll settings & Plugins
-# -----------------------------------------------------------------------------
 markdown: kramdown
 highlighter: rouge
 kramdown:
@@ -175,7 +160,7 @@ plugins:
   - jekyll-minifier
   - jekyll-paginate-v2
   - jekyll-regex-replace
-  - jekyll/scholar
+  - jekyll-scholar
   - jekyll-sitemap
   - jekyll-tabs
   - jekyll-terser
@@ -201,12 +186,10 @@ jekyll-archives:
   books:
     enabled: [year, tags, categories]
 
-display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"]
-display_categories: ["external-services"]
+display_tags: ["AI", "machine learning", "software engineering", "research"]
+display_categories: ["research", "teaching", "industry"]
 
-# -----------------------------------------------------------------------------
 # Jekyll Scholar (for publications)
-# -----------------------------------------------------------------------------
 scholar:
   last_name: [Zaidi]
   first_name: [Syed]
@@ -274,9 +257,7 @@ imagemagick:
 
 lazy_loading_images: true
 
-# -----------------------------------------------------------------------------
 # Optional Features
-# -----------------------------------------------------------------------------
 enable_google_analytics: false
 enable_cronitor_analytics: false
 enable_pirsch_analytics: false
@@ -285,9 +266,9 @@ enable_google_verification: false
 enable_bing_verification: false
 enable_masonry: true
 enable_math: true
-enable_tooltips: false
+enable_tooltips: true
 enable_darkmode: true
-enable_navbar_social: false
+enable_navbar_social: true
 enable_project_categories: true
 enable_medium_zoom: true
 enable_progressbar: true
